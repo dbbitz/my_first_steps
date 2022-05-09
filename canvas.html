@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;">
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(150,220);
+            ctx.lineTo(150,100);
+            ctx.stroke();
+            ctx.moveTo(150,200);
+            ctx.lineTo(230,130);
+            ctx.stroke();
+            ctx.moveTo(150,200);
+            ctx.lineTo(70,130);
+            ctx.stroke();
+            ctx.moveTo(150,200);
+            ctx.lineTo(40,190);
+            ctx.stroke();
+            ctx.moveTo(150,200);
+            ctx.lineTo(260,190);
+            ctx.stroke();
+            ctx.fillStyle="yellow";
+            ctx.beginPath();
+            ctx.arc(150,200,70,0,Math.PI*2,true);
+            ctx.closePath();
+            ctx.fill();
+            ctx.fillStyle="green";
+            ctx.fillRect(0,200,300,300);
+           
+            
+            </script>
+    </canvas>
+</body>
+</html>
